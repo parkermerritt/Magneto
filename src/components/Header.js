@@ -11,16 +11,20 @@ const Background = styled.section`
 const Header = () => (
   <Background>
     <header>
+      <h1>Kervens Calixte</h1>
       <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/roster">Roster</Link>
+            <Link to="/services">Services</Link>
           </li>
           <li>
-            <Link to="/schedule">Schedule</Link>
+            <Link to="/clients">Clients</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
