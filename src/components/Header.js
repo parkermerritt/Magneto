@@ -5,7 +5,8 @@ import styled from "styled-components";
 const Title = styled.h1`
   color: white;
   float: left;
-  margin: -6px -5px 30px;
+  margin: -12px -5px 30px;
+  font-size: 32px;
 `;
 
 const Background = styled.section`
@@ -28,9 +29,9 @@ const StyledLink = styled(
     color: white;
     font-weight: 300;
     display: inline;
-    margin: auto 22px;
+    margin: auto 16px;
     font-family: Helvetica, Arial, sans-serif;
-    @media (max-width: 700px) {
+    @media (max-width: 765px) {
       display: none;
     }
     &:hover {
