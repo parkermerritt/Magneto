@@ -5,11 +5,11 @@ import styled from "styled-components";
 const Title = styled.h1`
   color: white;
   float: left;
-  margin: -5px -5px 30px;
+  margin: -6px -5px 30px;
 `;
 
 const Background = styled.section`
-  background: gray;
+  background: black;
   height: 30px;
   padding: 25px;
 `;
@@ -26,8 +26,9 @@ const StyledLink = styled(
     text-decoration: none;
     float: left;
     color: white;
+    font-weight: 300;
     display: inline;
-    margin: auto 25px;
+    margin: auto 22px;
     font-family: Helvetica, Arial, sans-serif;
     @media (max-width: 700px) {
       display: none;
@@ -47,7 +48,7 @@ const StyledLink = styled(
 const Header = () => (
   <Background>
     <header>
-      <Title>Kervens Calixte</Title>
+      <Title>KERVENS CALIXTE</Title>
       <nav>
         <NavList>
           <li>
