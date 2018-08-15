@@ -2,8 +2,44 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+const Title = styled.h1`
+  color: white;
+  float: left;
+  margin: -5px -5px 30px;
+`;
+
 const Background = styled.section`
-  background: papayawhip;
+  background: gray;
+  height: 30px;
+  padding: 25px;
+`;
+
+const NavList = styled.ul`
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+`;
+
+const StyledLink = styled(
+  styled(Link)`
+    text-decoration: none;
+    float: left;
+    color: white;
+    display: inline;
+    margin: auto 25px;
+    font-family: Helvetica, Arial, sans-serif;
+    @media (max-width: 700px) {
+      display: none;
+    }
+    &:hover {
+      text-decoration: none;
+      color: cyan;
+    }
+  `,
+  "active"
+)`
+  color: white;
 `;
 
 // The Header creates links that can be used to navigate
@@ -11,22 +47,22 @@ const Background = styled.section`
 const Header = () => (
   <Background>
     <header>
-      <h1>Kervens Calixte</h1>
+      <Title>Kervens Calixte</Title>
       <nav>
-        <ul>
+        <NavList>
           <li>
-            <Link to="/">Home</Link>
+            <StyledLink to="/">HOME</StyledLink>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <StyledLink to="/services">SERVICES</StyledLink>
           </li>
           <li>
-            <Link to="/clients">Clients</Link>
+            <StyledLink to="/clients">CLIENTS</StyledLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <StyledLink to="/contact">CONTACT</StyledLink>
           </li>
-        </ul>
+        </NavList>
       </nav>
     </header>
   </Background>
