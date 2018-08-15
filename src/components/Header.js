@@ -25,9 +25,11 @@ const NavList = styled.ul`
 const StyledLink = styled(
   styled(Link)`
     text-decoration: none;
+    font-size: 17px;
+
     float: left;
     color: white;
-    font-weight: 300;
+    font-weight: 370;
     display: inline;
     margin: auto 16px;
     font-family: Helvetica, Arial, sans-serif;

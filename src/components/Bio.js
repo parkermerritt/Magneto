@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const InlineFlex = styled(Flex)`
   display: inline-flex;
+  padding-top: 5px;
 
   @media (max-width: 500px) {
     flex-direction: column;
@@ -13,9 +14,10 @@ const InlineFlex = styled(Flex)`
 `;
 
 const Subtitle = styled.h2`
+  padding-top: 4px;
   margin-left: 30px;
   margin-bottom: -2px;
-  font-size: 24px;
+  font-size: 28px;
 `;
 
 const StyledBox = styled(Box)`
