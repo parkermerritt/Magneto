@@ -9,7 +9,7 @@ import Bio from "./Bio";
 const Title = styled.h1`
   color: white;
   float: left;
-  margin: -8px -5px 30px;
+  margin: -12px -5px 30px;
   font-size: 32px;
 `;
 

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Flex, Box } from "grid-styled";
 import styled from "styled-components";
+import HomeVideo from "./HomeVideo";
 
 const InlineFlex = styled(Flex)`
   display: inline-flex;
@@ -49,6 +50,11 @@ const Bio = () => (
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         deserunt mollit anim. Lorem ipsum dolor sit amet, consectetur adipiscing
         elit, sed do eiusmod tempor incididunt ut labore.
+      </StyledBox>
+    </InlineFlex>
+    <InlineFlex>
+      <StyledBox width={[1 / 2]} p={20} ml={15} mr={15} pt={20}>
+        <HomeVideo />
       </StyledBox>
     </InlineFlex>
   </Fragment>
