@@ -28,14 +28,15 @@ const StyledBox = styled(Box)`
   }
 `;
 
-const Bio = () => (
+const Services = () => (
   <Fragment>
-    <Subtitle>BRAND MANAGEMENT</Subtitle>
+    <Subtitle>SERVICES</Subtitle>
     <InlineFlex>
       <StyledBox width={[1 / 2]} p={20} ml={25} mr={15} pt={20}>
-        Kervens Calixte provides brand management services to the most elite
-        athletes in the country. Book a session now to transform your public
-        image. <br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. <br />
         <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -54,4 +55,4 @@ const Bio = () => (
   </Fragment>
 );
 
-export default Bio;
+export default Services;

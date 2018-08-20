@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 import styled from "styled-components";
+import Services from "./Services";
+import Clients from "./Clients";
+import Contact from "./Contact";
+import Bio from "./Bio";
 
 const Title = styled.h1`
   color: white;
   float: left;
-  margin: -12px -5px 30px;
+  margin: -8px -5px 30px;
   font-size: 32px;
 `;
 
@@ -55,7 +59,7 @@ const Header = () => (
       <nav>
         <NavList>
           <li>
-            <StyledLink to="/">HOME</StyledLink>
+            <StyledLink to="/bio">HOME</StyledLink>
           </li>
           <li>
             <StyledLink to="/services">SERVICES</StyledLink>
@@ -68,6 +72,13 @@ const Header = () => (
           </li>
         </NavList>
       </nav>
+
+      <Switch>
+        <Route exact path="/Bio" component={Bio} />
+        <Route exact path="/Services" component={Services} />
+        <Route exact path="/Clients" component={Clients} />
+        <Route exact path="/Contact" component={Contact} />
+      </Switch>
     </header>
   </Background>
 );
