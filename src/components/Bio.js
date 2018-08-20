@@ -53,7 +53,7 @@ const Bio = () => (
       </StyledBox>
     </InlineFlex>
     <InlineFlex>
-      <StyledBox width={[1 / 2]} p={20} ml={15} mr={15} pt={20}>
+      <StyledBox width={[1]} p={20} ml={20} mr={20} pt={20}>
         <HomeVideo />
       </StyledBox>
     </InlineFlex>
